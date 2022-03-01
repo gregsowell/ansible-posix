@@ -1,0 +1,9 @@
+---
+- name: testing posix collections
+  hosts: localhost
+  gather_facts: false
+  vars:
+  tasks: 
+  - name: Gather information about active zones
+    ansible.posix.firewalld_info:
+      active_zones: yes
