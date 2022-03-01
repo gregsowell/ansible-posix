@@ -1,6 +1,6 @@
 ---
 - name: testing posix collections
-  hosts: localhost
+  hosts: controller
   gather_facts: false
   vars:
   tasks: 
